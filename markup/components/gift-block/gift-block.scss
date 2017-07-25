@@ -1,0 +1,60 @@
+.gift-block {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  width: 185px;
+  padding: 15px 10px 10px;
+
+  border: 1px dashed #b7b7b7;
+  border-radius: 5px;
+  background-color: $white;
+
+  justify-content: space-between;
+  align-items: center;
+  &__image {
+    display: flex;
+
+    height: 105px;
+
+    justify-content: center;
+    align-items: center;
+    img {
+      display: block;
+
+      margin: auto;
+    }
+  }
+  &__title {
+    font-family: 'Lato-Medium';
+    font-size: 17px;
+
+    text-align: center;
+
+    color: $dark-green;
+  }
+  &__cost {
+    font-family: 'Lato-Black';
+    font-size: 19px;
+    line-height: 30px;
+
+    position: relative;
+
+    height: 30px;
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-left: 35px;
+
+    color: $white;
+    border-radius: 30px;
+    background-color: $green;
+    &:before {
+      position: absolute;
+      left: 2px;
+
+      content: '';
+
+      @include bg($coin);
+    }
+  }
+}

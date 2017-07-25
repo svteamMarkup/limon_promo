@@ -1,0 +1,6 @@
+mixin gift-block(data)
+  .gift-block
+    .gift-block__image
+      img(src="%=static=%images/assets/gift-block/#{data.img}" alt="")
+    .gift-block__title!=data.title
+    .gift-block__cost #{data.cost}

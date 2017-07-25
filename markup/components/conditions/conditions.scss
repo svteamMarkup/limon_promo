@@ -1,0 +1,43 @@
+.conditions {
+  padding-top: 50px;
+
+  background: #509545 url(%=static=%general/pattern.png) repeat;
+  &__title {
+    font-family: 'Lato-Black';
+    font-size: 37px;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $white;
+  }
+  &__wrapper {
+    display: flex;
+
+    @extend .wrapper;
+    justify-content: space-between;
+  }
+  &__item {
+    font-family: 'Lato-Regular';
+    font-size: 18px;
+    line-height: 25px;
+
+    position: relative;
+
+    box-sizing: border-box;
+    width: 20%;
+    padding-left: 40px;
+
+    color: $white;
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: '';
+
+      @include bg($list);
+    }
+  }
+}

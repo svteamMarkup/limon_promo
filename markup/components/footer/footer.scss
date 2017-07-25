@@ -1,0 +1,53 @@
+.footer {
+  font-size: 18px;
+
+  display: flex;
+
+  width: 100%;
+  margin-top: 80px;
+  padding: 15px 0;
+
+  background-color: rgba($dark-green, .40);
+
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-family: 'Lato-Bold';
+
+    color: #99d48d;
+  }
+  &__item {
+    font-family: 'Lato-Regular';
+
+    position: relative;
+
+    margin-left: 15px;
+    padding-left: 30px;
+
+    color: $white;
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: '';
+    }
+    &._icq {
+      &:before {
+        @include bg($icq);
+      }
+    }
+    &._skype {
+      &:before {
+        @include bg($skype);
+      }
+    }
+    &._telegram {
+      &:before {
+        @include bg($telegram);
+      }
+    }
+    span {
+      color: $yellow;
+    }
+  }
+}

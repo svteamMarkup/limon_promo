@@ -1,0 +1,155 @@
+.top-baner {
+  position: relative;
+
+  text-align: center;
+
+  background: $green url(%=static=%general/pattern.png) repeat center;
+  &:before,
+  &:after {
+    z-index: 3;
+
+    content: '';
+
+    @include horizontal-center;
+  }
+  &:before {
+    top: 0;
+
+    @include bg($white-stars);
+  }
+  &:after {
+    bottom: -160px;
+
+    @include bg($yellow-stars);
+  }
+  &__wrapper {
+    @extend .wrapper;
+  }
+  &__logo {
+    position: relative;
+    z-index: 5;
+
+    margin: auto;
+
+    @include bg($logo);
+  }
+  &__title {
+    font-size: 63px;
+
+    position: relative;
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: $white;
+    &:before,
+    &:after {
+      position: absolute;
+      top: 10px;
+
+      content: '';
+    }
+    &:before {
+      left: -15px;
+
+      @include bg($splash-title-left);
+    }
+    &:after {
+      right: -15px;
+
+      @include bg($splash-title-right);
+    }
+  }
+  &__date {
+    font-size: 18px;
+
+    display: inline-block;
+
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px 15px;
+
+    text-transform: uppercase;
+
+    color: $dark-green;
+    border-radius: 10px;
+    background-color: $yellow;
+  }
+}
+
+.top-baner-steps {
+  position: relative;
+  z-index: 5;
+
+  display: flex;
+
+  margin-top: 30px;
+
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.top-baner-steps-item {
+  position: relative;
+
+  width: 340px;
+  &:after {
+    position: absolute;
+    top: 80px;
+
+    content: '';
+
+    @include bg($arrow-steps);
+  }
+  &._first {
+    &:after {
+      right: -100px;
+    }
+  }
+  &._center {
+    &:after {
+      right: -70px;
+    }
+  }
+  &._last {
+    &:after {
+      display: none;
+    }
+  }
+  &__image {
+    margin-bottom: 20px;
+    img {
+      display: block;
+
+      margin: auto;
+    }
+  }
+  &__title {
+    font-family: 'Lato-Regular';
+    font-size: 23px;
+
+    color: $white;
+    span {
+      font-family: 'Lato-Bold';
+    }
+  }
+}
+
+.top-baner-bottom {
+  margin-top: 30px;
+  padding: 20px 0;
+
+  background-color: rgba($dark-green, .25);
+  &__title {
+    font-family: 'Lato-Medium';
+    font-size: 25px;
+
+    color: $white;
+    span {
+      font-family: 'Lato-Black';
+
+      color: $yellow;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.gift-list {
+  padding-top: 40px;
+  &__title {
+    font-family: 'Lato-Black';
+    font-size: 37px;
+
+    position: relative;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $dark-green;
+    span {
+      color: $green;
+    }
+    &:after {
+      position: absolute;
+      z-index: 4;
+      bottom: -47px;
+
+      display: block;
+
+      width: 0;
+      height: 0;
+
+      content: '';
+
+      border-top: 22px solid $white;
+      border-right: 22px solid transparent;
+      border-left: 22px solid transparent;
+
+      @include horizontal-center;
+    }
+  }
+}
+
+.gift-list-row {
+  position: relative;
+
+  display: flex;
+
+  padding: 50px 0;
+
+  background-color: $white;
+
+  justify-content: center;
+  align-items: center;
+  &:before,
+  &:after {
+    display: block;
+
+    content: '';
+  }
+  &._gray {
+    background-color: $gray;
+    .gift-list-row__wrapper {
+      &:after {
+        border-top: 22px solid $gray;
+      }
+    }
+  }
+  &._apple {
+    &:before,
+    &:after {
+      @include bg($apple);
+    }
+    &:before {
+      margin-right: 70px;
+    }
+    &:after {
+      margin-left: 70px;
+    }
+  }
+  &._samsung {
+    &:before,
+    &:after {
+      @include bg($samsung);
+    }
+    &:before {
+      margin-right: 30px;
+    }
+    &:after {
+      margin-left: 30px;
+    }
+  }
+  &._gift {
+    &:before,
+    &:after {
+      @include bg($gift);
+    }
+    &:before {
+      margin-right: 80px;
+    }
+    &:after {
+      margin-left: 80px;
+    }
+  }
+  &__wrapper {
+    position: relative;
+
+    display: flex;
+
+    margin: 0;
+
+    @extend .wrapper;
+    justify-content: space-between;
+    align-items: stretch;
+    &:after {
+      position: absolute;
+      z-index: 4;
+      bottom: -72px;
+
+      display: block;
+
+      width: 0;
+      height: 0;
+
+      content: '';
+
+      border-top: 22px solid $white;
+      border-right: 22px solid transparent;
+      border-left: 22px solid transparent;
+
+      @include horizontal-center;
+    }
+  }
+}

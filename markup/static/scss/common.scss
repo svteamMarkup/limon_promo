@@ -5,4 +5,7 @@ body {
   font-family: 'Lato-Heavy';
 
   height: 100%;
+  @media screen and (max-width: 1200px) {
+    overflow-x: hidden;
+  }
 }

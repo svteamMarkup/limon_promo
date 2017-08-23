@@ -1,5 +1,8 @@
 .gift-list {
   padding-top: 40px;
+  @media screen and (max-width: 500px) {
+    padding-top: 30px;
+  }
   &__title {
     font-family: 'Lato-Black';
     font-size: 37px;
@@ -12,6 +15,9 @@
     text-transform: uppercase;
 
     color: $dark-green;
+    @media screen and (max-width: 500px) {
+      font-size: 21px;
+    }
     span {
       color: $green;
     }
@@ -47,11 +53,20 @@
 
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 1024px) {
+    padding-bottom: 25px;
+  }
   &:before,
   &:after {
     display: block;
 
     content: '';
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
   }
   &._gray {
     background-color: $gray;
@@ -107,6 +122,11 @@
     @extend .wrapper;
     justify-content: space-between;
     align-items: stretch;
+    @media screen and (max-width: 1200px) {
+      padding: 0 25px;
+
+      flex-wrap: wrap;
+    }
     &:after {
       position: absolute;
       z-index: 4;
@@ -124,6 +144,9 @@
       border-left: 22px solid transparent;
 
       @include horizontal-center;
+      @media screen and (max-width: 1024px) {
+        bottom: -47px;
+      }
     }
   }
 }

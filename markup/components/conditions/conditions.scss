@@ -12,12 +12,22 @@
     text-transform: uppercase;
 
     color: $white;
+    @media screen and (max-width: 500px) {
+      font-size: 21px;
+    }
   }
   &__wrapper {
     display: flex;
 
     @extend .wrapper;
     justify-content: space-between;
+    @media screen and (max-width: 1200px) {
+      box-sizing: border-box;
+      padding: 0 20px;
+    }
+    @media screen and (max-width: 800px) {
+      flex-wrap: wrap;
+    }
   }
   &__item {
     font-family: 'Lato-Regular';
@@ -31,6 +41,16 @@
     padding-left: 40px;
 
     color: $white;
+    @media screen and (max-width: 1200px) {
+      width: 25%;
+    }
+    @media screen and (max-width: 800px) {
+      width: 48%;
+      margin-bottom: 25px;
+    }
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
     &:before {
       position: absolute;
       left: 0;

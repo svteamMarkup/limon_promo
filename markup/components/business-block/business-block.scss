@@ -1,0 +1,94 @@
+.business-block {
+  &__banner {
+    position: relative;
+
+    width: 1200px;
+
+    text-align: center;
+    img {
+      display: block;
+
+      margin: auto;
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+      }
+    }
+  }
+  &__count {
+    font-family: 'Lato-Black';
+    font-size: 30px;
+    line-height: 46px;
+
+    position: absolute;
+    right: 360px;
+    bottom: 40px;
+
+    height: 46px;
+    padding-right: 20px;
+    padding-left: 55px;
+
+    color: $white;
+    border-radius: 30px;
+    background-color: $green;
+    @media screen and (max-width: 500px) {
+      font-size: 19px;
+      line-height: 30px;
+
+      right: 20px;
+      bottom: 20px;
+
+      height: 30px;
+      padding-right: 10px;
+      padding-left: 35px;
+      right: 85px;
+      bottom: 15px;
+    }
+    &:before {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+
+      content: '';
+
+      @include bg($coin-big);
+      @media screen and (max-width: 500px) {
+        @include bg($coin);
+        top: inherit;
+      }
+    }
+  }
+}
+
+.business-block-row {
+  position: relative;
+
+  display: flex;
+
+  padding: 50px 0;
+
+  background-color: $white;
+
+  justify-content: center;
+  align-items: center;
+  &:before,
+  &:after {
+    display: block;
+
+    content: '';
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+  &._visitweb {
+    &:before,
+    &:after {
+      @include bg($visitweb);
+    }
+    &:before {
+      margin-right: 80px;
+    }
+    &:after {
+      margin-left: 80px;
+    }
+  }
+}

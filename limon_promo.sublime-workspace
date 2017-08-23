@@ -4,16 +4,48 @@
 		"selected_items":
 		[
 			[
-				"fon",
-				"font-size"
-			],
-			[
 				"margin",
 				"margin-right"
 			],
 			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"marign",
+				"margin-bottom"
+			],
+			[
 				"text",
-				"text-decoration"
+				"text-transform"
+			],
+			[
+				"git",
+				"gift-block"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"top",
+				"top-baner-steps"
 			],
 			[
 				"moda",
@@ -22,18 +54,6 @@
 			[
 				"fn",
 				"function"
-			],
-			[
-				"pad",
-				"padding-top"
-			],
-			[
-				"font",
-				"font-size"
-			],
-			[
-				"marign",
-				"margin-bottom"
 			],
 			[
 				"for",
@@ -60,10 +80,6 @@
 				"paginate__item"
 			],
 			[
-				"te",
-				"text-transform"
-			],
-			[
 				"vide",
 				"video-row"
 			],
@@ -76,16 +92,8 @@
 				"cinema-guide-top-controls"
 			],
 			[
-				"top",
-				"top-slider-content"
-			],
-			[
 				"foo",
 				"footer"
-			],
-			[
-				"padd",
-				"padding"
 			],
 			[
 				"pa",
@@ -198,10 +206,6 @@
 			[
 				"d",
 				"display"
-			],
-			[
-				"inl",
-				"inline"
 			],
 			[
 				"margn",
@@ -510,10 +514,6 @@
 			[
 				"wi",
 				"width"
-			],
-			[
-				"he",
-				"header-contact"
 			]
 		]
 	},
@@ -591,10 +591,32 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/extiser/git/SVTEAM/limon_promo/markup"
+		"/Users/extiser/git/SVTEAM/limon_promo/markup",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/components",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/components/conditions",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/components/footer",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/pages",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/static",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/static/scss"
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/components/conditions/conditions.jade",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/pages/index.jade",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/components/footer/footer.jade",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/components/footer/footer.scss",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/components/conditions/conditions.scss",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/components/gift-list/gift-list.jade",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/components/gift-block/gift-block.scss",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/components/gift-block/gift-block.jade",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/components/gift-list/gift-list.scss",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/components/top-baner/top-baner.jade",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/components/top-baner/top-baner.scss",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/static/scss/common.scss",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/static/scss/vars.scss",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/static/scss/GUI.scss",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/components/default_component_scheme.json",
+		"/Users/extiser/git/SVTEAM/limon_promo/markup/static/scss/fonts.scss",
 		"/Users/extiser/git/1studio/netexar_mockapi/users.json",
 		"/Users/extiser/git/1studio/netexar_mockapi/info.json",
 		"/Users/extiser/Dropbox/style.css",
@@ -706,23 +728,7 @@
 		"/Users/extiser/git/SVTEAM/sexdating/markup/pages/finish.jade",
 		"/Users/extiser/git/SVTEAM/sexdating/markup/pages/step-4.jade",
 		"/Users/extiser/git/SVTEAM/sexdating/markup/pages/step-3.jade",
-		"/Users/extiser/git/SVTEAM/sexdating/markup/pages/step-2.jade",
-		"/Users/extiser/git/SVTEAM/sexdating/markup/pages/step-1.jade",
-		"/Users/extiser/git/SVTEAM/sexdating/markup/components/question/question.js",
-		"/Users/extiser/git/SVTEAM/sexdating/markup/components/profiles/profiles.jade",
-		"/Users/extiser/git/SVTEAM/sexdating/markup/components/nearby/nearby.jade",
-		"/Users/extiser/git/SVTEAM/sexdating/markup/static/scss/fonts.scss",
-		"/Users/extiser/git/SVTEAM/sexdating/markup/static/scss/mixins.scss",
-		"/Users/extiser/git/ozone/markup/static/scss/mixins.scss",
-		"/Users/extiser/git/SVTEAM/sexdating/markup/components/header/header.jade",
-		"/Users/extiser/git/SVTEAM/sexdating/markup/components/default_component_scheme.json",
-		"/Users/extiser/MAMP/ilq_api/upload/index.php",
-		"/Users/extiser/MAMP/ilq_api/profile/password/index.php",
-		"/Users/extiser/MAMP/ilq_api/channels/index.php",
-		"/Users/extiser/MAMP/ilq_api/channels/unfollow/index.php",
-		"/Users/extiser/MAMP/ilq_api/channels/follow/index.php",
-		"/Users/extiser/MAMP/ilq_api/events/going/index.php",
-		"/Users/extiser/MAMP/ilq_api/events/going/delete/index.php"
+		"/Users/extiser/git/SVTEAM/sexdating/markup/pages/step-2.jade"
 	],
 	"find":
 	{

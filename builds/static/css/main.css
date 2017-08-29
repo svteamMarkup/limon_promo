@@ -436,13 +436,6 @@ body {
   height: 100%;
 }
 
-@media screen and (max-width: 1200px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
-}
-
 .business-block__banner {
   position: relative;
   width: 1200px;
@@ -680,7 +673,8 @@ body {
 
 @media screen and (max-width: 500px) {
   .footer__item {
-    font-size: 14px;
+    font-size: 13px;
+    padding-left: 20px;
   }
 }
 
@@ -693,6 +687,9 @@ body {
 @media screen and (max-width: 500px) {
   .footer__item:before {
     top: 5px;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    left: -8px;
   }
 }
 
@@ -1029,6 +1026,12 @@ body {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 760px) {
+  .top-baner:before {
+    display: none;
+  }
+}
+
 .top-baner:after {
   bottom: -160px;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
@@ -1037,6 +1040,12 @@ body {
   height: 306px;
   background-size: 1342px, 833px;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 760px) {
+  .top-baner:after {
+    display: none;
+  }
 }
 
 .top-baner__logo {
@@ -1072,10 +1081,22 @@ body {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .top-baner__title {
+    font-size: 38px;
+  }
+}
+
 .top-baner__title:before, .top-baner__title:after {
   position: absolute;
   top: 10px;
   content: '';
+}
+
+@media screen and (max-width: 760px) {
+  .top-baner__title:before, .top-baner__title:after {
+    display: none;
+  }
 }
 
 .top-baner__title:before {

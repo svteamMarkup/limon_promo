@@ -16,11 +16,17 @@
     top: 0;
 
     @include bg($white-stars);
+    @media screen and (max-width: 760px) {
+      display: none;
+    }
   }
   &:after {
     bottom: -160px;
 
     @include bg($yellow-stars);
+    @media screen and (max-width: 760px) {
+      display: none;
+    }
   }
   &__wrapper {
     @extend .wrapper;
@@ -51,12 +57,18 @@
     @media screen and (max-width: 1024px) {
       font-size: 43px;
     }
+    @media screen and (max-width: 375px) {
+      font-size: 38px;
+    }
     &:before,
     &:after {
       position: absolute;
       top: 10px;
 
       content: '';
+      @media screen and (max-width: 760px) {
+        display: none;
+      }
     }
     &:before {
       left: -15px;
